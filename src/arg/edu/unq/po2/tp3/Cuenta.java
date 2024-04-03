@@ -5,8 +5,12 @@ public class Cuenta {
 	private int y;
 	public Cuenta(int x, int y) {
 		super();
-		this.x = x;
-		this.y = y;
+		this.setXY(x, y);
+	}
+	
+	public void setXY(int x, int y) {
+		this.setX(x);
+		this.setY(y);
 	}
 	public int getX() {
 		return x;
@@ -22,3 +26,4 @@ public class Cuenta {
 	}
 	
 }
+
