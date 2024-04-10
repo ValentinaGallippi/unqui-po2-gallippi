@@ -6,12 +6,13 @@ import java.util.List;
 public class Counter {
 	private List<Integer> numeros;
 	
+	//
 	public Counter() {
 		setNumeros(new ArrayList<Integer>());
 	}
 	
 	//arreglar esto
-	public void addNumber(List<Integer> numeros, int numeroAAgregar) {
+	public void addNumber (int numeroAAgregar) {
 		numeros.add(numeroAAgregar);
 	}
 	
@@ -22,7 +23,7 @@ public class Counter {
 	}
 	
 	
-	public int countEvenNumbers (List<Integer> numeros) {
+	public int countEvenNumbers () {
 		int evenNumbers = 0;
 		for (int entero:numeros) {
 			if(esPar(entero)) {
@@ -43,5 +44,8 @@ public class Counter {
 	public void setNumeros(List<Integer> numeros) {
 		this.numeros = numeros;
 	}
+	
+
+	
 }
 
